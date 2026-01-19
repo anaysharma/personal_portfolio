@@ -12,6 +12,9 @@ const geist = Geist({
 export const metadata: Metadata = {
   title: "Anay Sharma - Web Developer",
   description: "Full Stack Web Developer from India with 5 years of experience.",
+  icons: {
+    icon: "/icon.png",
+  },
 }
 
 export default function RootLayout({
