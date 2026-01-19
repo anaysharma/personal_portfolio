@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./styles/output.css --minify",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./styles/output.css --minify",
     "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./styles/output.css --watch",
     "serve": "npx serve ."
   },
