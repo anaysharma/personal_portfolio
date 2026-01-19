@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anay Sharma - Web Developer</title>
+    <meta
+      name="description"
+      content="Full Stack Web Developer from India with 5 years of experience."
+    />
+    <link rel="icon" href="/icon.png" />
+    <link rel="stylesheet" href="/styles/output.css" />
+  </head>
+  <body class="font-sans antialiased bg-background text-foreground">
+    <div
+      class="min-h-screen bg-background text-foreground relative overflow-hidden"
+    >
+      <svg class="absolute inset-0 w-0 h-0" aria-hidden="true">
+        <defs>
+          <filter id="noise">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0.9"
+              numOctaves="4"
+              result="noise"
+              seed="1"
+            />
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="0.5" />
+          </filter>
+        </defs>
+      </svg>
+
+      <main class="max-w-4xl mx-auto px-6 sm:px-8 lg:px-16 relative z-5">
+        <!-- Hero Section -->
+        <header
+          id="intro"
+          class="min-h-screen flex items-center relative z-10 isolate"
+        >
+          <div
+            class="absolute -top-[100vh] flex items-center justify-end -right-[20vw] w-[100vh] h-screen pointer-events-none -z-10"
+          >
+            <div
+              class="w-full blur-[40vw] rounded-full h-full animate-spin animation-duration-[100000ms] bg-[conic-gradient(from_0deg,oklch(0.628_0.2577_29.23),oklch(0.8664_0.294827_142.4953),oklch(0.452_0.313214_264.052),oklch(0.628_0.2577_29.23))]"
+            ></div>
+          </div>
+
+          <div class="grid lg:grid-cols-5 gap-12 sm:gap-16 w-full">
+            <div class="lg:col-span-3 space-y-6 sm:space-y-8">
+              <div class="space-y-3 sm:space-y-2">
+                <div
+                  class="text-sm text-muted-foreground font-mono tracking-wider"
+                >
+                  PORTFOLIO / 2026
+                </div>
+                <h1
+                  class="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight"
+                >
+                  Anay<br />
+                  <span class="text-muted-foreground">Sharma</span>
+                </h1>
+              </div>
+
+              <div class="space-y-6 max-w-md">
+                <p
+                  class="text-lg sm:text-xl text-muted-foreground leading-relaxed"
+                >
+                  Full Stack Developer crafting scalable applications at the
+                  intersection of
+                  <span class="text-foreground"> design</span>,
+                  <span class="text-foreground"> technology</span>, and
+                  <span class="text-foreground"> performance</span>.
+                </p>
+
+                <div
+                  class="flex flex-col sm:flex-row sm:items-center gap-1 text-sm text-muted-foreground"
+                >
+                  <div class="flex items-center gap-2">
+                    <div
+                      class="w-2 h-2 bg-green-500 rounded-full animate-pulse"
+                    ></div>
+                    Available for work
+                  </div>
+                  <svg
+                    class="size-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12.1" cy="12.1" r="1" />
+                  </svg>
+                  <div>India</div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="lg:col-span-2 flex flex-col justify-end space-y-6 sm:space-y-8 mt-8 lg:mt-0"
+            >
+              <div class="space-y-4">
+                <div class="text-sm text-muted-foreground font-mono">
+                  CURRENTLY
+                </div>
+                <div class="space-y-2">
+                  <div class="text-foreground">Software Developer</div>
+                  <div class="text-muted-foreground">@ Eulogik</div>
+                  <div class="text-xs text-muted-foreground">
+                    Dec 2024 — Present
+                  </div>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="text-sm text-muted-foreground font-mono">TECH</div>
+                <div class="flex flex-wrap gap-2" id="tech-stack"></div>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Work Section -->
+        <section id="work" class="min-h-screen py-20 sm:py-32">
+          <div class="space-y-12 sm:space-y-16">
+            <div
+              class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4"
+            >
+              <h2 class="text-3xl sm:text-4xl font-light">Selected Work</h2>
+              <div class="text-sm text-muted-foreground font-mono">
+                2023 — 2025
+              </div>
+            </div>
+            <div class="space-y-8 sm:space-y-10" id="work-list"></div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="thoughts" class="min-h-screen py-20 sm:py-32">
+          <div class="space-y-12 sm:space-y-16">
+            <h2 class="text-3xl sm:text-4xl font-light">Projects & Insights</h2>
+            <div
+              class="grid gap-6 sm:gap-8 lg:grid-cols-2"
+              id="projects-list"
+            ></div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-20 sm:py-32">
+          <div class="grid lg:grid-cols-2 gap-12 sm:gap-16">
+            <div class="space-y-6 sm:space-y-8">
+              <h2 class="text-3xl sm:text-4xl font-light">Let's Connect</h2>
+              <div class="space-y-6">
+                <p
+                  class="text-lg sm:text-xl text-muted-foreground leading-relaxed"
+                >
+                  Always interested in new opportunities, collaborations, and
+                  conversations about technology and design.
+                </p>
+                <div class="space-y-4">
+                  <a
+                    href="mailto:anaysharma8791@gmail.com"
+                    class="group flex items-center leading-none gap-2 text-foreground hover:text-muted-foreground transition-colors duration-300"
+                  >
+                    <span class="text-base">anaysharma8791@gmail.com</span>
+                    <svg
+                      class="size-4 transform group-hover:translate-x-1 transition-transform duration-300"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M5 12h14" />
+                      <path d="m12 5 7 7-7 7" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="space-y-6 sm:space-y-8">
+              <div class="text-sm text-muted-foreground font-mono">
+                ELSEWHERE
+              </div>
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-14"
+                id="social-links"
+              ></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="py-12 sm:py-16 border-t border-border">
+          <div
+            class="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 sm:gap-8"
+          >
+            <div class="space-y-2">
+              <div class="text-sm text-muted-foreground">
+                © 2025 Anay Sharma. All rights reserved.
+              </div>
+              <div class="text-[10px] text-muted-foreground">
+                Built with HTML, CSS & JS.
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <button
+                id="theme-toggle"
+                class="group p-3 rounded-lg border border-border hover:border-muted-foreground/50 transition-all duration-300"
+                aria-label="Toggle theme"
+              >
+                <svg
+                  id="sun-icon"
+                  class="size-4 hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M12 2v2" />
+                  <path d="M12 20v2" />
+                  <path d="m4.93 4.93 1.41 1.41" />
+                  <path d="m17.66 17.66 1.41 1.41" />
+                  <path d="M2 12h2" />
+                  <path d="M20 12h2" />
+                  <path d="m6.34 17.66-1.41 1.41" />
+                  <path d="m19.07 4.93-1.41 1.41" />
+                </svg>
+                <svg
+                  id="moon-icon"
+                  class="size-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </footer>
+      </main>
+
+      <div
+        class="fixed bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none"
+      ></div>
+    </div>
+
+    <script src="/js/main.js"></script>
+  </body>
+</html>
