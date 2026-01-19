@@ -362,8 +362,8 @@ export default function Home() {
               <div className="text-sm text-muted-foreground">
                 © 2025 Anay Sharma. All rights reserved.
               </div>
-              <div className="text-xs text-muted-foreground">
-                Built with v0.dev by Anay Sharma
+              <div className="text-[10px] text-muted-foreground">
+                Built with Next.js by Me.
               </div>
             </div>
 
